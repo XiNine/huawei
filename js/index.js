@@ -1,21 +1,23 @@
-//轮播图
-var i = 0;
-var time;
+//轮播图区域
+var i = 0, time;
 $(document).ready(function () {
+	//eq(0)选择给定索引值的元素 siblings() 获得匹配集合中每个元素的同胞
 	$('.lbt li').eq(0).show().siblings().hide()
-	//eq(0)选择给定索引值的元素\siblings() 获得匹配集合中每个元素的同胞
 	timer();
+	//点击左按钮时清除定时器
 	$('.btn-left').click(function () {
 		clearInterval(time);
 		if (i == 6) {
 			i == 0;
 		}
 		i++;
+		//再次调用淡入淡出效果和定时器效果
 		show();
 		timer();
 	})
+	//点击右边按钮时清除定时器
 	$('.btn-right').click(function () {
-		clearInterval(time)//清除定时器
+		clearInterval(time)
 		if (i == 0) {
 			i = 6;
 		}
@@ -24,8 +26,8 @@ $(document).ready(function () {
 		timer();
 	})
 })
+//自动轮播效果
 function timer() {
-	//setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
 	time = setInterval(function () {
 		show();
 		i++;
@@ -34,8 +36,7 @@ function timer() {
 		}
 	}, 2000)
 }
+//淡入淡出效果
 function show() {
-	$('.lbt li').eq(i).fadeIn(300).siblings().fadeOut(300)//fadeIn:淡入/fadeOut:淡出
+	$('.lbt li').eq(i).fadeIn(500).siblings().fadeOut(500)
 }
-
-// 搜索框

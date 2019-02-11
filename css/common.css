@@ -34,6 +34,7 @@
 .newss-wrapper{
     height: 60px;
     box-shadow: 0 5px 5px rgba(0,0,0,0.05);
+    position: relative;
 }
 .newss{
     height: 60px;
@@ -115,11 +116,13 @@
     right: 35px;
     top: 21px;
 }
-.newss div:last-child{
-    width: 1200px;
-    height: 400px;
+.newss-wrapper .subnav{
+    position: absolute;
+    top: 60px;
+    width: 100%;
     background: #0071cd;
-    z-index: 1000;
+    z-index: 100;
+    transition: all .3s;
 }
 /*轮播图*/
 .banner{

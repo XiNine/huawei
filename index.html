@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/common.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"> -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/index.js"></script>
     <title>Document</title>
@@ -37,7 +38,7 @@
                         <h1><a href="" title="荣耀官网">荣耀官网</a></h1>
                     </div>
                     <div class="news_s">
-                        <a href="">产品</a>
+                        <a href="" class="Subitem">产品</a>
                         <a href="">伙伴通</a>
                         <a href="">关于荣耀</a>
                         <a href="">荣耀科技</a>
@@ -48,31 +49,89 @@
                     </div>
                     <div class="search">
                         <form action="">
-                            <a href="" class="a">荣耀Magic2</a>
-                            <a href="" class="a">荣耀V20</a>
+                            <div id="aas">
+                                <a href="" class="a">荣耀Magic2</a>
+                                <a href="" class="a">荣耀V20</a>
+                            </div>
                             <input type="text" class="txt">
                             <input type="submit" value="">
                         </form>
                     </div>
-                    <div></div>
+                    <script>
+                        // 搜索框区域（要放到h5代码后才能生效）
+                        var searchs = (function () {
+                            var $a = document.querySelector('#aas');
+                            var $txt = document.querySelector('.txt');
+                            return {
+                                init() {
+                                    this.event()
+                                },
+                                event() {
+                                    var _this = this;
+                                    //文本框获得焦点时默认提示隐藏
+                                    $txt.onfocus = function () {
+                                        $a.style.display = 'none'
+                                    },
+                                        //文本框失去焦点时默认提示显现
+                                        $txt.onblur = function () {
+                                            $a.style.display = 'block'
+                                        }
+                                }
+                            }
+                        }())
+                        searchs.init();
+                    </script>
                 </section>
+                <div class="subnav"></div>
+                <script>
+                    var $Subitem = document.querySelector('.Subitem');
+                    var $subnav = document.querySelector('.subnav');
+                    $Subitem.onmouseenter = function () {
+                        $subnav.style.height = '0';
+                        $subnav.style.height = '300px';
+                    }
+                    $Subitem.onmouseleave = function () {
+                        $subnav.style.height = '0';
+                    }
+                </script>
             </section>
         </section>
     </header>
     <!-- 轮播图 -->
-    <section class="banner container">
-        <span class="btn-left"></span>
-        <span class="btn-right"></span>
-        <ul class="lbt clear_fix">
-            <li><a href=""><img src="images/sy-banner1.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/sy-banner2.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/sy-banner3.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/sy-banner4.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/sy-banner5.jpg" alt=""></a></li>alt=""></a></li>
-            <li><a href=""><img src="images/sy-banner7.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/sy-banner8.jpg" alt=""></a></li>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <section class="banner container swiper-container">
+        <span class="btn-left swiper-button-next"></span>
+        <span class="btn-right swiper-button-prev"></span>
+        <div class="swiper-scrollbar"></div>
+        <ul class="lbt clear_fix swiper-wrapper">
+            <li class="swiper-slide"><a href=""><img src="images/sy-banner1.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="images/sy-banner2.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="images/sy-banner3.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="images/sy-banner4.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="images/sy-banner5.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="images/sy-banner7.jpg" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="images/sy-banner8.jpg" alt=""></a></li>
         </ul>
     </section>
+    <!-- <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 6,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: true
+            },
+        })
+    </script> -->
     <!-- 手机展示 -->
     <section class="screen-wrapper clear_fix">
         <section class="screen container">
