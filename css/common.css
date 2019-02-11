@@ -120,8 +120,8 @@
     position: absolute;
     top: 60px;
     width: 100%;
-    background: #0071cd;
-    z-index: 100;
+    background:-webkit-linear-gradient(top,#0071cd 60%,white);
+    z-index: 10;
     transition: all .3s;
 }
 /*轮播图*/
