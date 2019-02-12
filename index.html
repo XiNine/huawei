@@ -84,15 +84,26 @@
                 </section>
                 <div class="subnav"></div>
                 <script>
-                    // 下拉导航
-                    var $Subitem = document.querySelector('.Subitem');
-                    var $subnav = document.querySelector('.subnav');
-                    $Subitem.onmouseenter = function () {
-                        $subnav.style.height = '300px';
-                    }
-                    $Subitem.onmouseleave = function () {
-                        $subnav.style.height = '0';
-                    }
+                    // 下拉菜单（指定区域代码才会生效）
+                    var Subitem = (function () {
+                        var $Subitem = document.querySelector('.Subitem');
+                        var $subnav = document.querySelector('.subnav');
+                        return {
+                            init() {
+                            this.event();
+                            },
+                            event() {
+                                var _this = this;
+                                $Subitem.onmouseenter = function () {
+                                    $subnav.style.height = '300px';
+                                }
+                                $Subitem.onmouseleave = function () {
+                                    $subnav.style.height = '0';
+                                }
+                            }
+                        }
+                    }())
+                    Subitem.init();
                 </script>
             </section>
         </section>
