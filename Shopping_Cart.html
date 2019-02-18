@@ -1,13 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/Shopping_Cart.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <title>购物车</title>
 </head>
+
 <body>
-    
+    <!-- 头部 -->
+    <header>
+        <section id="header-wrap">
+            <section class="header container">
+                <section class="header-top">
+                    <div class="header-left">
+                        <ul class="clear_fix">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="" class="border">华为官网</a></li>
+                            <li><a href="" class="border">荣耀官网</a></li>
+                            <li><a href="" class="border">花粉俱乐部</a></li>
+                            <li><a href="" class="border">V码（优购码）</a></li>
+                            <li><a href="" class="border">企业购</a></li>
+                            <li><a href="" class="border">Select Region</a></li>
+                            <li><a href="" class="border">更多精彩</a><i class="iconfont icon-Group"></i></li>
+                        </ul>
+                    </div>
+                    <div class="header-right">
+                        <ul class="clear_fix">
+                            <li><a href="Land.html">请登录</a></li>
+                            <li><a href="">注册</a></li>
+                            <li><a href="" class="border">我的订单</a></li>
+                            <li><a href="" class="border">客户服务</a><i class="iconfont icon-Group"></i></li>
+                            <li><a href="" class="border">网站导航</a><i class="iconfont icon-Group"></i></li>
+                            <li><a href="" class="border">手机版</a><i class="iconfont icon-Group"></i></li>
+                            <li><a href="" class="border">购物车</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <nav class="nav-wrap">
+                <section class="nav container clear_fix">
+                    <div class="logo">
+                        <h1>
+                            <a href="" title="Vall.com-华为商城">Vall.com-华为商城</a>
+                        </h1>
+                    </div>
+                    <div class="list-nav">
+                        <ul>
+                            <li><a href="">手机</a></li>
+                            <li><a href="">笔记本&平板</a></li>
+                            <li><a href="">智能穿戴</a></li>
+                            <li><a href="">智能家居</a></li>
+                            <li><a href="">通用配件</a></li>
+                            <li><a href="">专属配件</a></li>
+                        </ul>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <input type="text" class="text">
+                            <input type="submit" value="">
+                            <div>
+                                <a href="">荣耀V20</a>
+                                <a href="">nova4</a>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <!-- 主体 -->
+    <section class="main-wrap">
+        <section class="main container">
+            <div class="title">
+                <p>首页<i class="iconfont icon-you"></i>手机<i class="iconfont icon-you"></i>荣耀<i class="iconfont icon-you"></i>荣耀Magic2
+                    法全视屏麒麟980Al芯片屏内指纹超广角A|三摄全网通6GB+128GB渐变黑</p>
+            </div>
+            <!-- 放大镜 -->
+            <div class="box">
+                <div class="show-image">
+                    <img src="images/images_commodity/01_big.jpg" alt="">
+                    <span class="filter"></span>
+                </div>
+                <div class="show-big-image">
+                    <img src="images/images_commodity/01_largest.jpg" alt="" id="big-image">
+                </div>
+                <div class="list swiper-container">
+                    <ul class="clear_fix img-box">
+                        <li class="active"><img src="images/images_commodity/01_small.jpg" alt=""></li>
+                        <li><img src="images/images_commodity/02_small.jpg" alt=""></li>
+                        <li><img src="images/images_commodity/03_small.jpg" alt=""></li>
+                        <li><img src="images/images_commodity/04_small.jpg" alt=""></li>
+                    </ul>
+                    <div class="swiper-button-prev btn-left"></div>
+                    <div class="swiper-button-next btn-right"></div>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                </script>
+            </div>
+            <script src="js/Shopping_Cart.js"></script>
+            <script>
+                glass.init(2)
+            </script>
+            <!-- 右边信息部分 -->
+            <div class="box-right">
+                <p>荣耀Magic2魔法全视屏麒麟980Al芯片屏内指纹超广角Al三摄全网通8GB+128GB渐变红</p>
+                <span>①赠价值238元豪华礼包（移动电源+蓝牙音箱）②6期分期免息③购机抽奖</span>
+                <div class="Price">
+                    <p>价格<span>￥3799.00</span></p>
+                    <p>促销<span>赠品</span><a>选择></a>></p>
+                    <p><span>整点规赠送</span>>10/16/20点下单前300赠移动电源（荣耀指定手机共享）</p>
+                    <p><span>分期免息</span>>花呗、掌上生活、工行、农行分期支付可享免息</p>
+                    <p><span>赠送积分</span>买即赠商城积分，积分可抵现~</p>
+                </div>
+            </div>
+        </section>
+    </section>
 </body>
+
 </html>
