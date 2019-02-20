@@ -39,15 +39,11 @@ $(function () {
 
 //下拉菜单
 $(function () {
-    $('.Subitem').mouseover(function () {
-        $('.subnav').stop().animate({
-            height: '300px'
-        })
+    $('.Subitem,.subnav').mouseover(function () {
+        $('.subnav').stop().slideDown();
 
-        $('.Subitem').mouseout(function () {
-            $('.subnav').stop().animate({
-                height: '0px'
-            })
+        $('.Subitem,.subnav').mouseout(function () {
+            $('.subnav').stop().slideUp();
         })
     })
 })

@@ -198,6 +198,18 @@
     color: Gray;
     margin: 0 8px;
 }
+.Mobile_phone{
+    width: 100%;
+    height: 400px;
+    background: red;
+    z-index: 9999;
+}
+.Mobile_phone p span{
+    margin: 10px 10px;
+}
+.Mobile_phone ul li{
+    float: left;
+}
 
 /* 主体 */
 .main{
