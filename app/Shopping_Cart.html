@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/Shopping_Cart.css">
     <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"> -->
     <title>购物车</title>
 </head>
@@ -106,6 +107,7 @@
                         法全视屏麒麟980Al芯片屏内指纹超广角A|三摄全网通6GB+128GB渐变黑</p>
                 </div>
                 <!-- 放大镜 -->
+                <script src="js/Shopping_Cart.js"></script>
                 <div class="box">
                     <div class="show-image">
                         <img src="images/images_commodity/01_big.jpg" alt="">
@@ -137,7 +139,7 @@
                                 });
                     </script>
                 </div>
-                <script src="js/Shopping_Cart.js"></script>
+
                 <script>
                     glass.init(2)
                 </script>
@@ -290,11 +292,46 @@
             <section class="container">
                 <div>
                     <a href="#bg-s" class="a1">商品详情</a>
-                    <a href="#parameter">规格参数</a>
-                    <a href="#After_sale">包装与售后</a>
-                    <a href="">用户评价（23943）</a>
+                    <a href="#parameter" class="a1">规格参数</a>
+                    <a href="#After_sale" class="a1">包装与售后</a>
+                    <a href="" class="a1">用户评价（23943）</a>
                 </div>
             </section>
+            <!-- 1.导航到达顶部固定，离开回到原位 -->
+            <!-- 2.选择对应项，底部信息切换 -->
+            <script>
+                var Navigation = (function () {
+                    var $box = document.querySelector('.Navigation');
+                    var top1 = $box.offsetTop; //获取滚动距离
+                    return {
+                        init() {
+                            this.event();
+                        },
+                        event() {
+                            var _this = this;
+                            //功能1
+                            document.body.onscroll = function () {
+                                //获取滚动高度
+                                var top = document.documentElement.scrollTop;
+                                // 顶部限制
+                                if (top1 > top) {
+                                    top = top1;
+                                }
+                                $box.style.top = top + 'px';
+                            }
+                        }
+                    }
+                }())
+                Navigation.init();
+
+                // 功能2
+                $(function(){
+                    $('.a1').click(function(){
+                        $(this).siblings('a').removeClass('a2');
+                        $(this).addClass('a2');
+                    })
+                })
+            </script>
         </section>
         <section class="bg-s" id="bg-s"><img src="images/Commodity_details/1.png" alt=""></section>
         <section class="bg-s"><img src="images/Commodity_details/2.jpg" alt=""></section>
