@@ -1,0 +1,186 @@
+/* 头部 */
+body{
+    background: #f2f2f2;
+}
+.header{
+    width: 1366px;
+    height: 66px;
+    background: #333;
+    position: relative;
+}
+.header span:nth-child(1){
+    display: inline-block;
+    width: 143px;
+    height: 31px;
+    background: url(../images/images_Laed/logo.jpg) no-repeat;
+    position: absolute;
+    top: 18px;
+    left: 188px;
+}
+.header span:nth-child(2){
+    display: inline-block;
+    color: #fff;
+    border-left: 2px solid #fff;
+    padding-left: 14px;
+    font-size: 18px;
+    position: absolute;
+    top: 25px;
+    left: 346px;
+}
+/* 主体 */
+main{
+    width: 1366px;
+    height: 650px;
+}
+.main{
+   width: 943px;
+   height: 564px;
+   margin: 30px auto;
+}
+.main .tit{
+    width: 943px;
+    height: 33px;
+}
+.main .tit div:nth-of-type(1){
+    float: left;
+}
+.main .tit div:nth-of-type(1) a{
+    display: inline-block;
+    width: 146px;
+    height: 36px;
+    line-height: 36px;
+    background: #ccc;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+.main .tit div:nth-of-type(1) a:first-child{
+    background: #1aa8d5 url(../images/images_Laed/icon2.jpg) no-repeat;
+    background-position: 26px 6px;
+}
+.main .tit div:nth-of-type(1) a:nth-of-type(2){
+    background: #ccc url(../images/images_Laed/icon3.jpg) no-repeat;
+    background-position: 15px 9px;
+}
+.main .tit div:nth-of-type(2){
+    float: right;
+    line-height: 30px;
+}
+.main .tit div:nth-of-type(2) span,a{
+    font-size: 14px;
+}
+.main .tit div:nth-of-type(2) a{
+    color: #007dff;
+}
+.main .conent{
+    width: 943px;
+    height: 580px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.main .conent form{
+    margin-top: 40px;
+}
+.main .conent .inp{
+    width: 430px;
+    height: 45px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 10px auto;
+    background: #f7f7f7;
+    position: relative;
+}
+.main .conent .inp{
+    margin-top: 25px;
+}
+.main .conent .inp:nth-of-type(3){
+    background: url(../images/images_Laed/icon4.jpg) no-repeat;
+    background-position: 8px;
+}
+.main .conent .inp:nth-of-type(3) span{
+    font-size: 14px;
+    color: #666;
+    margin-left: 46px;
+    line-height: 45px;
+}
+.main .conent .inp .tits{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.main .conent .inp select{
+    border: 0;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    top: 0px;
+    right: 24px;
+    width: 280px;
+    height: 45px;
+    background: #f7f7f7;
+}
+.main .conent .inp input{
+    width: 270px;
+    height: 45px;
+    background: #f7f7f7;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    top: 0px;
+    right: 24px;
+    padding-left: 10px;
+}
+.main .conent .inp a{
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    color: #007dff;
+    font-size: 14px;
+}
+.main .conent .btn{
+    width: 200px;
+    height: 42px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    background: #007dff;
+    position: absolute;
+    bottom: 45px;
+    left: 364px;
+}
+.main .conent .inp p{
+    font-size: 12px;
+    position: absolute;
+    top: 49px;
+    left: 19px;
+}
+.main .conent .inp .p1{
+    color: Green;
+}
+.main .conent .inp .p2{
+    color: red;
+}
+
+
+/* 尾部 */
+.footer{
+    width: 1366px;
+    height: 80px;
+    background: #ebebeb;
+    text-align: center;
+    color: #999;
+    overflow: hidden;
+}
+.footer div{
+    margin: 20px 0 10px 0;
+}
+.footer div a{
+    color: #999;
+    margin: 0 10px;
+}
+.footer div a:hover{
+    text-decoration: underline;
+}
+.footer p{
+    font-size: 12px;
+}

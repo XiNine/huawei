@@ -1,0 +1,603 @@
+/* 头部 */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header-wrap{
+    background:#f9f9f9;
+}
+.header{
+    height: 40px;
+}
+.header .header-top{
+    height: 36px;
+    line-height: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-top ul li{
+  float: left;
+}
+.header-top ul li a{
+    padding: 0 10px;
+    font-size: 10px;
+    position: relative;
+    color: 	#808080;
+}
+.header-top ul li .border:after{
+    content: '';
+    display: block;
+    height: 10px;
+    width: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 4px;
+}
+.header-top ul li a:hover{
+    color: red;
+}
+.header-top ul li .icon-Group{
+    color: #ccc;
+    position: relative;
+    right: 9px;
+}
+
+/* logo--导航部分 */
+.nav-wrap{
+    background: #fff;
+    height: 75px;
+    box-shadow: 0 2px 10px #D3D3D3;
+}
+.nav{
+    height: 75px;
+    line-height: 75px;
+}
+.logo{
+    width: 194px;
+    height: 29px;
+    float: left;
+    margin-top: 20px;
+}
+.logo a{
+    display: block;
+    width: 194px;
+    height: 29px;
+    text-indent: -9999px;
+    background: url(../images/images_commodity/login.jpg) no-repeat;
+}
+.list-nav{
+    float: left;
+    margin-left: 10px;
+}
+.list-nav ul li{
+   float: left;
+   margin: 0 10px;
+}
+.list-nav ul li a{
+    color: #000;
+    font-size: 16px;
+}
+.list-nav ul li a:hover{
+    color: red;
+}
+.nav .form{
+    float: right;
+    width: 348px;
+    height: 42px;
+    position: relative;
+}
+.nav .form form{
+    width: 348px;
+    height: 42px;
+}
+.nav .form .text{
+    width: 325px;
+    height: 29px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+.nav .form input[type="submit"]{
+    width: 18px;
+    height: 18px;
+    background: url(../images/fdj.png) no-repeat;
+    position: relative;
+    right: 35px;
+    top: 4px;
+}
+.nav .form div{
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    right: 70px;
+}
+.nav .form div a{
+    font-size: 12px;
+    color: Gray;
+    margin: 0 8px;
+}
+
+/* 主体 */
+.main{
+    height: 700px;
+}
+.title{
+    margin: 12px 0;
+}
+.title p{
+    font-size: 12px;
+}
+.title p i{
+    font-size: 10px;
+    color: #ccc;
+    margin: 0 8px;
+}
+
+/* 放大镜 */
+.zuida{
+    height: 700px;
+}
+.box{
+    float: left;
+    width: 450px;
+    height: 528px;
+}
+.show-image {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+  }
+.show-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+.filter {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: move;
+    display: none;
+}
+.list{
+    width: 400px;
+    height: 80px;
+    float: left;
+    overflow: hidden;
+    padding: 0 35px;
+    margin-top: 35px;
+    position: relative;
+}
+.list span{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: 19px;
+    border: 1px solid #A9A9A9;
+    cursor: pointer;
+}
+.list .btn-left{
+    background: #ccc url(../images/images_commodity/z.png) no-repeat;
+    left: 0px;
+}
+.list .btn-right{
+    background: #ccc url(../images/images_commodity/y.png) no-repeat;
+    right: 33px;
+}
+.img-box{
+    width: 9999px;
+}
+.img-box>li {
+    float: left;
+    border: 1px solid transparent;
+    margin: 0 10px;
+    padding: 0 2px;
+}
+.img-box>li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.img-box>li:hover,.img-box>li.active {
+    border: 1px solid red;
+}
+.show-big-image {
+    position: absolute;
+    left: 488px;
+    top: 110px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    display: none;
+}
+.show-big-image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.btn-left{
+    position: absolute;
+    left: -10px;
+}
+
+/* 右边信息部分 */
+.box-right{
+    width: 720px;
+    height: 674px;
+    float: right;
+}
+.box-right h2{
+    font-size: 20px;
+    line-height: 30px;
+}
+.box-right span:nth-of-type(1){
+    font-size: 12px;
+    color: Crimson;
+}
+.Price{
+    width: 720px;
+    height: 178px;
+    background: #f5f5f5;
+    margin-top: 12px;
+    padding: 14px 0 0 10px;
+    box-sizing: border-box;
+}
+.Price p{
+    font-size: 12px;
+    line-height: 30px;
+}
+.Price p strong{
+    font-size: 20px;
+    color: Crimson;
+    margin-left: 16px;
+}
+.Price p span{
+   border: 1px solid Crimson;
+   padding: 0 4px;
+   margin: 0 12px;
+}
+.Price p:nth-of-type(2) a{
+    color: Gray;
+    cursor: pointer;
+}
+.Price .p1{
+    margin-left: 47px;
+}
+.Explain{
+    width: 720px;
+    margin:8px 0 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+.Explain p{
+    font-size: 12px;
+    line-height: 28px;
+}
+.Explain p span{
+    color: #000 !important;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+.Explain p:nth-child(1) span{
+    border-right: 1px solid #ccc;
+}
+
+/* 选择配置 */
+.Choice{
+    width: 720px;
+    height: 345px;
+    padding: 12px 0 0 10px;
+}
+.Choice p{
+    font-size: 12px;
+    line-height: 33px;
+}
+.Choice p:nth-child(1) span{
+    padding: 10px 10px 10px 45px;
+    background: url(../images/images_commodity/bg3.jpg) no-repeat;
+    background-position: 10px 5px;
+}
+.Choice p:nth-child(2){
+    margin-top: 8px;
+}
+.Choice p span{
+    margin: 0 6px;
+    padding: 3px 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.Choice p span:nth-child(1){
+    margin-left: 16px;
+}
+.Choice p .s1{
+    color: #000;
+}
+.Choice p .s2{
+    border: 1px solid #B22222;
+}
+.Choice p a{
+    background: #F5F5F5;
+    color: #000;
+    padding: 3px 12px;
+    margin: 0 4px;
+    font-size: 12px;
+}
+.Choice p a:nth-child(1){
+    margin-left: 40px;
+}
+.Choice p em{
+    color: #B22222;
+    margin-left: 5px;
+}
+.Choice .buy .add{
+    float: left;
+    height: 44px;
+    border: 1px solid #d6d6d6;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.Choice .buy .add input{
+    float: left;
+    width: 41px;
+    height: 44px;
+    line-height: 44px;
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+    border-right: 1px solid #e2e2e2;
+}
+.Choice .buy .add span{
+    display: block;
+    width: 21px;
+    float: left;
+}
+.Choice .buy .add span a{
+    display: block;
+    font-size: 16px;
+    width: 21px;
+    height: 21px;
+    line-height: 22px;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+.Choice .buy .add span a:first-child{
+    border-bottom: 1px solid #e2e2e2;
+}
+.Choice .buy .purchase{
+    margin-left: 30px;
+}
+.Choice .buy .purchase a{
+    display: inline-block;
+    width: 176px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+.Choice .buy .purchase a:first-child{
+    background: orange;
+}
+.Choice .buy .purchase a:nth-child(2){
+    background: #FF4500;
+}
+
+
+/* 推荐搭配 */
+.collocation-wrap{
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+.collocation{
+    height: 235px;
+    border-bottom: 1px solid #ccc;
+}
+.collocation .left{
+    float: left;
+    width: 180px;
+    height: 242px;
+    text-align: center;
+    margin-top: 15px;
+    background: url(../images/Commodity_details/jia.png) no-repeat;
+    background-position: 155px 91px;
+}
+.collocation .left h2{
+    width: 80px;
+    font-size: 18px;
+    color: red;
+    border-bottom: 1px solid red;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+.collocation .left img{
+    width: 80px;
+    height: 103px;
+    margin-top: 14px;
+}
+.collocation .left p{
+    font-size: 12px;
+}
+.collocation .left span{
+    color: red;
+    font-size: 10px;
+}
+.collocation .box{
+    width: 810px;
+    height: 180px;
+    overflow: hidden;
+    padding: 0 18px;
+    margin:30px 0 0 21px;
+    position: relative;
+}
+.collocation .box ul{
+    padding: 0 10px;
+    width: 9999px;
+}
+.collocation .box ul li{
+    float: left;
+    width: 146px;
+    margin: 0 8px;
+    position: relative;
+}
+.collocation .box ul li img{
+    display: block;
+}
+.collocation .box ul li a{
+    color: #000;
+}
+.collocation .box ul li span{
+    color: red;
+    font-size: 10px;
+    margin-left: 35px;
+}
+.collocation .box .Selection{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 127px;
+    left: 16px;
+    cursor: pointer;
+}
+.collocation .box .btn-left1,.btn-right1{
+    display: inline-block;
+    width: 21px;
+    height: 73px;
+    position: absolute;
+    top: 41px;
+    cursor: pointer;
+}
+.collocation .box .btn-left1{
+    background: url(../images/Commodity_details/z.png) no-repeat;
+    left: 0px
+}
+.collocation .box .btn-right1{
+    background: url(../images/Commodity_details/y.png) no-repeat;
+    right: 0px;
+}
+.collocation .right{
+    float: right;
+    width: 125px;
+    height: 130px;
+    margin-top: 48px;
+}
+.collocation .right p{
+    font-size: 12px;
+    line-height: 24px;
+}
+.collocation .right p span{
+    font-size: 16px;
+    color: red;
+}
+.collocation .right a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.collocation .right a:nth-of-type(1){
+    background: orange;
+}
+.collocation .right a:nth-of-type(2){
+    background: Brown;
+}
+
+/* 商品详情 */
+.Navigation{
+    height: 130px;
+}
+.Navigation div{
+    margin: 0 auto;
+    width: 790px;
+    height: 130px;
+    display: flex;
+}
+.Navigation div a{
+    font-size: 18px;
+    color: #808080;
+    padding: 0 20px;
+    margin: 50px 10px;
+}
+.Navigation div .a1{
+    border-bottom: 2px solid red;
+}
+.bg-s{
+    width: 1366px;
+}
+.bg-s img{
+    width: 100%;
+}
+
+/* 规格参数 */
+.parameter{
+    padding: 30px 0;
+}
+.parameter h3{
+    font-size: 20px;
+    padding-left: 12px;
+    border-left: 3px solid red;
+    margin-bottom: 14px;
+}
+.parameter .main1{
+    border-top: 1px solid #ccc;
+    padding: 35px 0;
+    position: relative;
+}
+.parameter .main1 h1{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+}
+.parameter .main1 ul{
+    width: 1060px;
+    float: right;
+    font-size: 14px;
+}
+.parameter .main1 ul li{
+    line-height: 30px;
+}
+.parameter .main1 ul li label{
+    float: left;
+    width: 128px;
+}
+.parameter .main1 ul li span{
+    float: left;
+    width: 854px;
+    margin-left: 20px;
+}
+.subject{
+    background:#F5F5F5;
+}
+.After_sale{
+    margin-top: 50px;
+}
+.parameter .main1 p span{
+    display: block;
+    margin-left: 130px;
+    font-size: 14px;
+}
+.parameter .main1 p span em{
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    color: #3a3a3a;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    width: 223px;
+}
+.parameter .main1 .Packing{
+    float: left;
+    margin-top: 30px;
+}
