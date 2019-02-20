@@ -28,7 +28,7 @@
                             <li><a href="" class="border">V码（优购码）</a></li>
                             <li><a href="" class="border">企业购</a></li>
                             <li><a href="" class="border">Select Region</a></li>
-                            <li><a href="" class="border">更多精彩</a><i class="iconfont icon-Group"></i></li>
+                            <li class="bg1"><a href="" class="border">更多精彩</a><i class="iconfont icon-Group"></i></li>
                         </ul>
                     </div>
                     <div class="header-right">
@@ -36,9 +36,9 @@
                             <li><a href="Land.html">请登录</a></li>
                             <li><a href="register.html">注册</a></li>
                             <li><a href="" class="border">我的订单</a></li>
-                            <li><a href="" class="border">客户服务</a><i class="iconfont icon-Group"></i></li>
-                            <li><a href="" class="border">网站导航</a><i class="iconfont icon-Group"></i></li>
-                            <li><a href="" class="border">手机版</a><i class="iconfont icon-Group"></i></li>
+                            <li class="bg2"><a href="" class="border">客户服务</a><i class="iconfont icon-Group"></i></li>
+                            <li class="bg3"><a href="" class="border">网站导航</a><i class="iconfont icon-Group"></i></li>
+                            <li class="bg4"><a href="" class="border">手机版</a><i class="iconfont icon-Group"></i></li>
                             <li><a href="" class="border">购物车</a></li>
                         </ul>
                     </div>
@@ -67,35 +67,57 @@
                                 <a href="" class="a">荣耀V20</a>
                                 <a href="" class="a">nova4</a>
                             </div>
-                            <input type="text" class="text">
+                            <input type="text" class="text txt">
                             <input type="submit" value="">
                         </form>
                     </div>
-                    <script>
-                        var searchs = (function () {
-                            var $a = document.querySelector('#aas');
-                            var $txt = document.querySelector('.text');
-                            return {
-                                init() {
-                                    this.event()
-                                },
-                                event() {
-                                    var _this = this;
-                                    //文本框获得焦点时默认提示隐藏
-                                    $txt.onfocus = function () {
-                                    $a.style.display = 'none'
-                                    },
-                                        //文本框失去焦点时默认提示显现
-                                        $txt.onblur = function () {
-                                        $a.style.display = 'block'
-                                    }
-                                }
-                            }
-                        }())
-                        searchs.init();
-                    </script>
+                    <script src="js/Common.js"></script>
                 </section>
             </nav>
+            <div class="Marvellous">
+                <ul>
+                    <li><a href="">EMUI</a></li>
+                    <li><a href="">应用市场</a></li>
+                    <li><a href="">华为终端云空间</a></li>
+                    <li><a href="">开发者联盟</a></li>
+                </ul>
+            </div>
+            <div class="service">
+                <ul>
+                    <li><a href="">服务中心</a></li>
+                    <li><a href="">联系客服</a></li>
+                </ul>
+            </div>
+            <div class="guide">
+                <ul> 
+                    <h4>频道</h4>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                </ul>
+                <ul>
+                    <h4>产品</h4>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                </ul>
+                <ul>
+                    <h4>增值服务</h4>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                </ul>
+                <ul>
+                    <h4>会员</h4>
+                    <li><a href="">会员频道</a></li>
+                </ul>
+            </div>
+            <div class="Mobile">
+                <ul>
+                    <li><img src="images/images_Laed/erweima1.jpg" alt=""><br>Android版下载</li>
+                    <li><img src="images/images_Laed/erweima1.jpg" alt=""><br>IOS版下载</li>
+                </ul>
+            </div>
         </section>
     </header>
     <!-- 主体 -->

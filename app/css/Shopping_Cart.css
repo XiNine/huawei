@@ -5,6 +5,7 @@
 }
 #header-wrap{
     background:#f9f9f9;
+    position: relative;
 }
 .header{
     height: 40px;
@@ -41,6 +42,84 @@
     position: relative;
     right: 9px;
 }
+.header-top ul .bgs{
+    background:#fff;
+}
+.Marvellous{
+    width: 120px;
+    height: 143px;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 39px;
+    left: 554px;
+    box-shadow: 0px 0px 3px #ccc;
+    display: none;
+}
+.Marvellous ul li{
+    line-height: 30px;
+}
+.Marvellous ul li a{
+    color: #000;
+    font-size: 12px;
+}
+.service{
+    width: 83px;
+    height: 77px;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 39px;
+    right: 286px;
+    box-shadow: 0px 0px 3px #ccc;
+    display: none;
+}
+.service ul li{
+    line-height: 30px;
+}
+.service ul li a{
+    color: #000;
+    font-size: 12px;
+}
+.guide{
+    width: 894px;
+    height: 134px;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 39px;
+    right: 201px;
+    box-shadow: 0px 0px 3px #ccc;
+    display: none;
+}
+.guide ul{
+    float: left;
+    margin: 5px 40px;
+}
+.guide ul li{
+    line-height: 30px;
+}
+.guide ul li a{
+    color: #000;
+    font-size: 12px;
+}
+.Mobile{
+    width: 210px;
+    height: 400px;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 39px;
+    right: 129px;
+    box-shadow: 0px 0px 3px #ccc;
+}
+.Mobile ul li{
+    line-height: 30px;
+    margin: 6px;
+    color: #DC143C;
+    font-size: 16px;
+}
+
 
 /* logo--导航部分 */
 .nav-wrap{

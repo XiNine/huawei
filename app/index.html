@@ -58,54 +58,9 @@
                             <input type="submit" value="">
                         </form>
                     </div>
-                    <script>
-                        // 搜索框区域（要放到h5代码后才能生效）
-                        var searchs = (function () {
-                            var $a = document.querySelector('#aas');
-                            var $txt = document.querySelector('.txt');
-                            return {
-                                init() {
-                                    this.event()
-                                },
-                                event() {
-                                    var _this = this;
-                                    //文本框获得焦点时默认提示隐藏
-                                    $txt.onfocus = function () {
-                                        $a.style.display = 'none'
-                                    },
-                                        //文本框失去焦点时默认提示显现
-                                        $txt.onblur = function () {
-                                            $a.style.display = 'block'
-                                        }
-                                }
-                            }
-                        }())
-                        searchs.init();
-                    </script>
                 </section>
                 <div class="subnav"></div>
-                <script>
-                    // 下拉菜单（指定区域代码才会生效）
-                    var Subitem = (function () {
-                        var $Subitem = document.querySelector('.Subitem');
-                        var $subnav = document.querySelector('.subnav');
-                        return {
-                            init() {
-                            this.event();
-                            },
-                            event() {
-                                var _this = this;
-                                $Subitem.onmouseenter = function () {
-                                    $subnav.style.height = '300px';
-                                }
-                                $Subitem.onmouseleave = function () {
-                                    $subnav.style.height = '0';
-                                }
-                            }
-                        }
-                    }())
-                    Subitem.init();
-                </script>
+                <script src="js/Common.js"></script>
             </section>
         </section> 
         </section>
