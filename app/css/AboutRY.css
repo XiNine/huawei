@@ -152,6 +152,9 @@ html,body{
 .subnav div ul li{
     line-height: 40px;
 }
+.subnav div ul li a{
+    color: #fff;
+}
 
 /* 主体 */
 /* 焦点图 */
