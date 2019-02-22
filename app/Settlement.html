@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/Settlement.css">
     <link rel="stylesheet" href="css/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="css/ShopCar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ShopCar.css" />
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <title>结算</title>
 </head>
+
 <body>
-     <!-- 头部 -->
-     <header>
+    <!-- 头部 -->
+    <header>
         <section id="header-wrap">
             <section class="header container">
                 <section class="header-top">
@@ -25,7 +29,7 @@
                             <li><a href="" class="border">V码（优购码）</a></li>
                             <li><a href="" class="border">企业购</a></li>
                             <li><a href="" class="border">Select Region</a></li>
-                            <li><a href="" class="border">更多精彩</a><i class="iconfont icon-Group"></i></li>
+                            <li class="bg1"><a href="" class="border">更多精彩</a><i class="iconfont icon-Group"></i></li>
                         </ul>
                     </div>
                     <div class="header-right">
@@ -33,9 +37,9 @@
                             <li><a href="Land.html">请登录</a></li>
                             <li><a href="register.html">注册</a></li>
                             <li><a href="" class="border">我的订单</a></li>
-                            <li><a href="" class="border">客户服务</a><i class="iconfont icon-Group"></i></li>
-                            <li><a href="" class="border">网站导航</a><i class="iconfont icon-Group"></i></li>
-                            <li><a href="" class="border">手机版</a><i class="iconfont icon-Group"></i></li>
+                            <li class="bg2"><a href="" class="border">客户服务</a><i class="iconfont icon-Group"></i></li>
+                            <li class="bg3"><a href="" class="border">网站导航</a><i class="iconfont icon-Group"></i></li>
+                            <li class="bg4"><a href="" class="border">手机版</a><i class="iconfont icon-Group"></i></li>
                             <li><a href="" class="border">购物车</a></li>
                         </ul>
                     </div>
@@ -60,37 +64,173 @@
                     </div>
                     <div class="form">
                         <form action="">
+                            <div id="aas">
+                                <a href="" class="a">荣耀V20</a>
+                                <a href="" class="a">nova4</a>
+                            </div>
                             <input type="text" class="text txt">
                             <input type="submit" value="">
-                            <div id="aas">
-                                <a href="">荣耀V20</a>
-                                <a href="">nova4</a>
-                            </div>
                         </form>
                     </div>
                     <script src="js/Common.js"></script>
                 </section>
             </nav>
+            <div class="Marvellous">
+                <ul>
+                    <li><a href="">EMUI</a></li>
+                    <li><a href="">应用市场</a></li>
+                    <li><a href="">华为终端云空间</a></li>
+                    <li><a href="">开发者联盟</a></li>
+                </ul>
+            </div>
+            <div class="service">
+                <ul>
+                    <li><a href="">服务中心</a></li>
+                    <li><a href="">联系客服</a></li>
+                </ul>
+            </div>
+            <div class="guide">
+                <ul>
+                    <h4>频道</h4>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                </ul>
+                <ul>
+                    <h4>产品</h4>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                </ul>
+                <ul>
+                    <h4>增值服务</h4>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                    <li><a href="">华为专区</a></li>
+                </ul>
+                <ul>
+                    <h4>会员</h4>
+                    <li><a href="">会员频道</a></li>
+                </ul>
+            </div>
+            <div class="Mobile">
+                <ul>
+                    <li><img src="images/images_Laed/erweima1.jpg" alt=""><br>Android版下载</li>
+                    <li><img src="images/images_Laed/erweima1.jpg" alt=""><br>IOS版下载</li>
+                </ul>
+            </div>
+
         </section>
     </header>
-    <ul class="title content" style="margin-top: 70px;">
-        <li><input id="checkAll" type="checkbox"/>&emsp;全选</li>
-        <li style="width: 450px; text-align: left;">商品</li>
-        <li>数量</li>
-        <li>单价</li>
-        <li>操作</li>
-        <li>总价</li>
-    </ul>
-   
-   
-    
-    <ul id="footer" class="title content">
-        <li style="margin-left: 5px;"><input id="deslection" type="checkbox"/>&emsp;取消选择</li>
-        <li>商品总数：<span id="totalCount">0</span></li>
-        <li>需付金额：<span id="totalPrice">0</span></li>
-        <li style="margin-left: 170px;"><input id="delCartGoods" type="button" value="删除所选商品" /></li>
-        <li style="float: right;"><input id="btn" type="button" value="立即结算"  onclick="alert('你有钱吗你点点点')"/></li>
-    </ul>
+    <div class="catbox">
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th><label>
+                            <input class="check-all check" type="checkbox" />&nbsp;&nbsp;全选</label></th>
+                    <th>商品</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="checkbox"><input class="check-one check" type="checkbox" /></td>
+                    <td class="goods"><img src="images/images_commodity/01_small.jpg" alt="" /><span>荣耀Magic2魔法全视屏麒麟980Al芯片屏内指纹超广角Al三摄全网通8GB+128GB渐变红</span></td>
+                    <td class="price">3799.00</td>
+                    <td class="count"><span class="reduce"></span>
+                        <input class="count-input" type="text" value="1" />
+                        <span class="add">+</span></td>
+                    <td class="subtotal">3799.00</td>
+                    <td class="operation"><span class="delete">删除</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="foot" id="foot">
+            <label class="fl select-all"><input type="checkbox" class="check-all check" />&nbsp;&nbsp;全选</label>
+            <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+            <div class="fr closing" onclick="getTotal();">结 算</div>
+            <input type="hidden" id="cartTotalPrice" />
+            <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+            <div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span
+                    class="arrow down">︾</span></div>
+            <div class="selected-view">
+                <div id="selectedViewList" class="clearfix">
+                    <div><img src="images/1.jpg"><span>取消选择</span></div>
+                </div>
+                <span class="arrow">◆<span>◆</span></span>
+            </div>
+        </div>
+    </div>
+    <section class="collocation-wrap">
+        <div class="collocation container clear_fix">
+            <div class="left">
+                <h2>推荐搭配</h2>
+                <img src="images/images_commodity/01_small.jpg" alt="">
+                <p>荣耀Magic2 魔法全视屏 麒麟980AI芯片 屏</p>
+                <span>¥3799.00</span>
+            </div>
+            <div class="box swiper-container clear_fix">
+                <ul class="clear_fix">
+                    <li>
+                        <a href=""><img src="images/Commodity_details/img1.png" alt="">荣耀存储（白色）</a>
+                        <div class="Selection"></div>
+                        <span>￥649.00</span>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/Commodity_details/img1.png" alt="">荣耀存储（白色）</a>
+                        <div class="Selection"></div>
+                        <span>￥649.00</span>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/Commodity_details/img1.png" alt="">荣耀存储（白色）</a>
+                        <div class="Selection"></div>
+                        <span>￥649.00</span>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/Commodity_details/img1.png" alt="">荣耀存储（白色）</a>
+                        <div class="Selection"></div>
+                        <span>￥649.00</span>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/Commodity_details/img1.png" alt="">荣耀存储（白色）</a>
+                        <div class="Selection"></div>
+                        <span>￥649.00</span>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/Commodity_details/img1.png" alt="">荣耀存储（白色）</a>
+                        <div class="Selection"></div>
+                        <span>￥649.00</span>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/Commodity_details/img1.png" alt="">荣耀存储（白色）</a>
+                        <div class="Selection"></div>
+                        <span>￥649.00</span>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/Commodity_details/img1.png" alt="">荣耀存储（白色）</a>
+                        <div class="Selection"></div>
+                        <span>￥649.00</span>
+                    </li>
+                </ul>
+                <span class="btn-left1"></span>
+                <span class="btn-right1"></span>
+            </div>
+            <div class="right">
+                <p>已选择0个配件</p>
+                <p>组合价：￥<span>3799.00</span></p>
+                <a href="">加入购物车</a>
+                <a href="">立即下单</a>
+            </div>
+            <script>
+                $('.Selection').click(function () {
+                    $(this).toggleClass('bgbg');
+                })
+            </script>
+        </div>
+    </section>
     <!--底部口号-->
     <div id="slogan_wrapper">
         <div class="slogan content">
@@ -322,14 +462,14 @@
                 <a href="#">隐私声明</a>
                 <a href="#"> 服务协议</a>
                 <a href="#"> COOKIES</a>
-                 Copyright © 2012-2019 华为软件技术有限公司 版权所有 保留一切权利
-                 <br />
-                 公安备案 
+                Copyright © 2012-2019 华为软件技术有限公司 版权所有 保留一切权利
+                <br />
+                公安备案
                 <a href="#">苏公网安备32011402010009号</a>
                 <em>| </em>
                 <a href="#">苏ICP备17040376号-6</a>
                 <br />
-                 增值电信业务经营许可证：苏B2-20130048号
+                增值电信业务经营许可证：苏B2-20130048号
                 <em>| </em>
                 <a href="#">网络文化经营许可证：苏网文[2015] 1599-026号</a>
             </div>
@@ -338,14 +478,15 @@
                     <img src="images/lf.jpg">
                 </a>
                 <a href="#">
-                    <img src="images/ri.png"/>
+                    <img src="images/ri.png" />
                 </a>
             </p>
         </div>
     </div>
     <!--返回头部小火箭-->
     <div id="gotop">
-        <img id="img" src="images/Top.png"/>
+        <img id="img" src="images/Top.png" />
     </div>
 </body>
+
 </html>

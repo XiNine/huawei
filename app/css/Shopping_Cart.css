@@ -424,7 +424,7 @@
 .Choice p a:nth-child(1){
     margin-left: 40px;
 }
-.Choice p em{
+.Choice p .title{
     color: #B22222;
     margin-left: 5px;
 }
@@ -473,6 +473,7 @@
     line-height: 45px;
     text-align: center;
     color: #fff;
+    cursor: pointer;
 }
 .Choice .buy .purchase a:first-child{
     background: orange;
@@ -602,6 +603,9 @@
 }
 .collocation .right a:nth-of-type(2){
     background: Brown;
+}
+.bgbg{
+    background: url(../images/Commodity_details/xz.png) no-repeat;
 }
 
 /* 商品详情 */
