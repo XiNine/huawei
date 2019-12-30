@@ -160,6 +160,7 @@
 }
 .fuwu_banner img{
     width: 1200px;
+    margin-top: 85px;
 }
 .fuwu_wenzi .container{
     height: 60px;
@@ -179,7 +180,7 @@
 }
 .shouhou ul li{
     float: left;
-    transition:all .6s linear;
+    transition:all .3s linear;
 }
 .shouhou ul li:hover{
     transform:translatez(10px);
@@ -200,7 +201,7 @@
 }
 .shouhou2 ul li{
     float: left;
-    transition:all .6s linear;
+    transition:all .3s linear;
     margin-bottom: 30px;
 }
 .shouhou2 ul li:hover{

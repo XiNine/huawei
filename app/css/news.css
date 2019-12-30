@@ -156,6 +156,9 @@
     margin: 0 auto;
     overflow: hidden;
 }
+.Glory_news a img{
+    margin-top: 88px;
+}
 .wenzi .container{
     background: #fff;
 }

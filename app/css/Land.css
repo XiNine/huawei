@@ -1,6 +1,6 @@
 /* 头部 */
 .header{
-    width: 1366px;
+    width: 100%;
     height: 66px;
     background: #ebebeb;
     position: relative;
@@ -24,7 +24,7 @@
     left: 346px;
 }
 .tips{
-    width: 1366px;
+    width: 100%;
     height: 40px;
     line-height: 40px;
     background: #fffbe4;
@@ -36,9 +36,10 @@
 }
 /* 主体 */
 .main{
-    width: 1366px;
-    height: 590px;
-    background: url(../images/images_Laed/dl.bg.jpg) no-repeat;
+    width: 100%;
+    height: 750px;
+    background: url(../images/images_Laed/dl.bg.jpg) left no-repeat;
+    background-size: 100% 100%;
     overflow: hidden;
     position: relative;
 }
@@ -182,7 +183,7 @@
     transition:all .3s;
 }
 .login2 .Scan:hover{ 
-      left: 4%
+    left: 4%
 }
 .login2 .txts{
     width: 347px;
@@ -208,7 +209,7 @@
 }
 /* 尾部 */
 .footer{
-    width: 1366px;
+    width: 100%;
     height: 80px;
     background: #ebebeb;
     text-align: center;

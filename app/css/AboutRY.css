@@ -161,6 +161,7 @@ html,body{
 .main .b-img{
     height:264px;
     background:url(../images/AboutRY_img/kv-brand.jpg) no-repeat;
+    margin-top: 88px;
 }
 /* 小导航 */
 .main .xiao-nav{

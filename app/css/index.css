@@ -198,12 +198,11 @@
 }
 .New_products{
     margin-top: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 .New_products div{
     float: left;
-}
-.New_products div:first-child{
-    margin-left: 175px;
 }
 .New_products div:last-child span{
    display: block;
